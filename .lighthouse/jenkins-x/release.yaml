@@ -43,7 +43,9 @@ spec:
           resources: {}
           script: |
             #!/usr/bin/env bash
-            jx gitops helm release
+            source /workspace/source/.jx/variables.sh
+            cd charts/local-external-secrets
+            make release
   podTemplate: {}
   serviceAccountName: tekton-bot
   timeout: 240h0m0s
