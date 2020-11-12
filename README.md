@@ -1,3 +1,5 @@
 # local-external-secrets
 
 Provides a patched version of the `ExternalSecrets` custom resource to work around [#476](https://github.com/godaddy/kubernetes-external-secrets/issues/476) so that we can support local secrets (no secrets storage back end, just local kubernetes Secret resources)
+
+This chart is expected to be used by a [Jenkins X V3](https://jenkins-x.io/docs/v3/) installation if its using `secretStorage: local` in `jx-requirements.yml`
