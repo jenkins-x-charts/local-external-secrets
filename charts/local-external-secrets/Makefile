@@ -1,5 +1,5 @@
 CHART_REPO := gs://jenkinsxio/charts
-NAME := local-externa-secrets
+NAME := local-external-secrets
 
 build: clean
 	rm -rf Chart.lock
