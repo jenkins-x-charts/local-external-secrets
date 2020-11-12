@@ -1,0 +1,7 @@
+
+# lets allow the schedular validation YAML to be disabled
+# as its huge and can fail to install using `kubectl apply`
+enableSchedulerValidation: true
+
+# to enable local external secrets
+localExternalSecrets: false
