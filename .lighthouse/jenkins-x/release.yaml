@@ -28,7 +28,7 @@ spec:
           resources: {}
         - name: promote-changelog
           resources: {}
-        - name: promote-helm-release
+        - name: release-chart
           resources: {}
           script: |
             #!/usr/bin/env bash
