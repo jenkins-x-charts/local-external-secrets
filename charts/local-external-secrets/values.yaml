@@ -1,7 +1,8 @@
-
 # lets allow the schedular validation YAML to be disabled
 # as its huge and can fail to install using `kubectl apply`
 enableSchedulerValidation: true
-
 # to enable local external secrets
 localExternalSecrets: false
+image:
+  repository: ghcr.io/jenkins-x/local-external-secrets
+  tag: 0.0.14
